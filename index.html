@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2> Currency Converter </h2>
+        <form>
+            <p> Enter the amount </p>
+            <input value="100" name = "value" id="amount"/>
+            <div class="dropdown">
+                <div class="from">
+                    <p> From </p>
+                    <div class="selectContainer">
+                        
+                       <img id="from" src="https://flagsapi.com/US/flat/64.png" >
+                        <select name ="from" >
+                           <!--  <option value="USD" selected> USD</option> 
+                            <option value="IND"> IND </option>
+                            <option value="EUR"> EUR</option> 
+                            <option value="AUD"> AUD </option>   -->
+                        </select>
+                        
+                    </div>
+
+                </div>
+                <img id="exchange" src="./arrow-right-arrow-left-solid.svg">
+                <div class="to">
+                    <p> To </p>
+                    <div class="selectContainer">
+                        
+                        <img id="top" src="https://flagsapi.com/IN/flat/64.png" >
+                        <select name="to">
+                            <!--
+                             <option value="USD" selected> USD</option> 
+                            <option value="IND"> IND </option>
+                            <option value="EUR"> EUR</option> 
+                            <option value="AUD"> AUD </option>
+                            -->
+                        </select>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="result">1 USD = 80 INR</div>
+            <button> Get Exchange Rate </button>
+        </form>
+    </div>
+    
+   <!-- <script src="./codes.js"></script> -->
+    <script src="./script.js"></script>
+    
+</body>
+</html>
